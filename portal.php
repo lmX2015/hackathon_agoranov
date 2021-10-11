@@ -44,7 +44,7 @@ include("security.php");
       <td><a href="password_change.php">Change Password</a></td>
       <td><a href="user_extra.php">Create User</a></td>
       <td><a href="logout.php" onclick="return confirm('Are you sure you want to leave?');">Logout</a></td>
-      <!--<td><font color="red">Welcome <?php if(isset($_SESSION["login"])){echo ucwords($_SESSION["login"]);}?></font></td>!-->
+      <td><font color="red">Welcome <?php if(isset($_SESSION["login"])){echo ucwords($_SESSION["login"]);}?></font></td>
 
     </tr>
 
