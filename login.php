@@ -85,7 +85,7 @@ if(isset($_POST["form"]))
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <!--<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Architects+Daughter">-->
-<link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="css/stylesheet.css" media="screen" />
 <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
 
 <!--<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>-->

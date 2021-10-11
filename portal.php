@@ -1,3 +1,7 @@
+<?php
+include("security.php");
+?>
+
 <!doctype html>
 <html class="no-js" lang="">
 
