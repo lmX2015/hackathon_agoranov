@@ -1,7 +1,6 @@
 <?php
 
 include("security.php");
-include("selections.php");
 
 $message = "";
 
