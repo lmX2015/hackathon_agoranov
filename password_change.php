@@ -1,6 +1,7 @@
 <?php
 
 include("security.php");
+include("connect_i.php");
 
 $message = "";
 
