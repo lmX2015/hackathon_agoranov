@@ -26,44 +26,42 @@ include("security.php");
 </head>
 
 <body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Skynov</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-<header>
+    <div class="collapse navbar-collapse" id="navbarColor02">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Home
+            <span class="visually-hidden">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="password_change.php">Change Password</a>
+           </li>
+        <li class="nav-item">
+          <a href="user_extra.php">Create User</a>
+        </li>
+        <li class="nav-item">
+          <a href="logout.php" onclick="return confirm('Are you sure you want to leave?');">Logout</a>
+        </li>
 
-  <h1>Skynov</h1>
-
-  <h2>An extremely unsecure web document storage !</h2>
-
-</header>
-
-<div id="menu">
-
-  <table>
-
-    <tr>
-
-      <td><font color="#ffb717">Bugs</font></td>
-      <td><a href="password_change.php">Change Password</a></td>
-      <td><a href="user_extra.php">Create User</a></td>
-      <td><a href="logout.php" onclick="return confirm('Are you sure you want to leave?');">Logout</a></td>
-      <td><font color="red">Welcome <?php if(isset($_SESSION["login"])){echo ucwords($_SESSION["login"]);}?></font></td>
-
-    </tr>
-
-  </table>
-
-</div>
+      </ul>
+    </div>
+  </div>
+</nav>
 
 <div id="main">
+<h1>Skynov</h1>
 
-  <h1>Portal</h1>
-
-  <p>Description</p>
-
-
-
-
-
-  </form>
+<h2>An extremely unsecure web document storage !</h2>
+<p>
+   Welcome <?php if(isset($_SESSION["login"])){echo ucwords($_SESSION["login"]);}?>
+ </p>
 
 </div>
 
