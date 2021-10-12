@@ -132,17 +132,16 @@ if(isset($_POST["form"]))
 <p>Enter your credentials.</p>
 
     <form action="<?php echo($_SERVER["SCRIPT_NAME"]);?>" method="POST">
+        <div class="form-group">
+          <label for="login" class="form-label mt-4">Login:</label>
+          <input type="email" class="form-control" id="login" name="login" placeholder="Enter username">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1" class="form-label mt-4">Password</label>
+          <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+        </div>
 
-        <p><label for="login">Login:</label><br />
-        <input type="text" id="login" name="login" size="20" autocomplete="off"></p>
-
-        <p><label for="password">Password:</label><br />
-        <input type="password" id="password" name="password" size="20" autocomplete="off"></p>
-
-
-        </p>
-
-        <button type="submit" name="form" value="submit">Login</button>
+        <button class="btn btn-primary" type="submit" name="form" value="submit">Login</button>
 
     </form>
 
