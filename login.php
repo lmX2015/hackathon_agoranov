@@ -130,7 +130,7 @@ if(isset($_POST["form"]))
 <h2>Skynov, an extremely unsecure application !</h1>
 <div>
 <p>Enter your credentials.</p>
-
+    <div id="login">
     <form action="<?php echo($_SERVER["SCRIPT_NAME"]);?>" method="POST">
         <fieldset>
         <div class="form-group">
@@ -145,6 +145,7 @@ if(isset($_POST["form"]))
         <button class="btn btn-primary" type="submit" name="form" value="submit">Login</button>
         </fieldset>
     </form>
+    </div>
 
     <br />
     <?php
