@@ -135,7 +135,7 @@ if(isset($_POST["form"]))
         <fieldset>
         <div class="form-group">
           <label for="login" class="form-label mt-4">Login:</label>
-          <input type="email" class="form-control" id="login" name="login" placeholder="Enter username">
+          <input type="text" class="form-control" id="login" name="login" placeholder="Enter username">
         </div>
         <div class="form-group">
           <label for="exampleInputPassword1" class="form-label mt-4">Password</label>
