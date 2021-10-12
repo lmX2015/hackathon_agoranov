@@ -129,9 +129,7 @@ if(isset($_POST["form"]))
 <div class="main">
 <h2>Skynov, an extremely unsecure application !</h1>
 <div>
- <h1>Login</h1>
-
-    <p>Enter your credentials.</p>
+<p>Enter your credentials.</p>
 
     <form action="<?php echo($_SERVER["SCRIPT_NAME"]);?>" method="POST">
 
