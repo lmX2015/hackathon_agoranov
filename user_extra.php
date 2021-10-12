@@ -1,7 +1,6 @@
 <?php
 
 include("security.php");
-include("functions_external.php");
 include("connect_i.php");
 include("admin/settings.php");
 
