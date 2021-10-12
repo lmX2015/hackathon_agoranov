@@ -14,13 +14,15 @@ include("security.php");
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="css/main.css" media="screen" />
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   <!--<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />-->
 
 <!--<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>-->
   <script src="js/html5.js"></script>
 
-  <title>bWAPP - Portal</title>
+  <title>Skynov - Home</title>
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -41,13 +43,13 @@ include("security.php");
           </a>
         </li>
         <li class="nav-item">
-          <a href="password_change.php">Change Password</a>
+          <a class="nav-link"  href="password_change.php">Change Password</a>
            </li>
         <li class="nav-item">
-          <a href="user_extra.php">Create User</a>
+          <a class="nav-link"  href="user_extra.php">Create User</a>
         </li>
         <li class="nav-item">
-          <a href="logout.php" onclick="return confirm('Are you sure you want to leave?');">Logout</a>
+          <a class="nav-link" href="logout.php" onclick="return confirm('Are you sure you want to leave?');">Logout</a>
         </li>
 
       </ul>
