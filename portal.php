@@ -57,13 +57,11 @@ include("security.php");
   </div>
 </nav>
 
-<div id="main">
-<h1>Skynov</h1>
-
-<h2>An extremely unsecure web document storage !</h2>
+<div class="main">
+<h2>Skynov, an extremely unsecure application !</h1>
 <p>
    Welcome <?php if(isset($_SESSION["login"])){echo ucwords($_SESSION["login"]);}?>
- </p>
+</p>
 
 </div>
 
