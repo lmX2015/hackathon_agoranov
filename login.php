@@ -132,7 +132,7 @@ if(isset($_POST["form"]))
 <p>Enter your credentials.</p>
 
     <form action="<?php echo($_SERVER["SCRIPT_NAME"]);?>" method="POST">
-       <div class="form-group row">
+        <fieldset>
         <div class="form-group">
           <label for="login" class="form-label mt-4">Login:</label>
           <input type="email" class="form-control" id="login" name="login" placeholder="Enter username">
@@ -143,7 +143,7 @@ if(isset($_POST["form"]))
         </div>
 
         <button class="btn btn-primary" type="submit" name="form" value="submit">Login</button>
-        </div>
+        </fieldset>
     </form>
 
     <br />
