@@ -52,6 +52,8 @@ if(isset($_POST["form"]))
 
             $_SESSION["login"] = $row->login;
             $_SESSION["admin"] = $row->admin;
+            $_SESSION["secret"] = $row->secret;
+
             $_SESSION["token"] = $token;
             $_SESSION["amount"] = 1000;
 

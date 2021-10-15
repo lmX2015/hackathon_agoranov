@@ -58,11 +58,9 @@ include("security.php");
 </nav>
 
 <div class="main">
-<h2>Skynov, an extremely unsecure application !</h1>
-<p>
-   Welcome <?php if(isset($_SESSION["login"])){echo ucwords($_SESSION["login"]);}?>
-</p>
+<h2> Welcome <?php if(isset($_SESSION["login"])){echo ucwords($_SESSION["login"]);}?>
 
+<h3> Your secret is "<?php if(isset($_SESSION["login"])){echo ucwords($_SESSION["login"]);}?>". Keep it safe ! </h3>
 </div>
 
 
