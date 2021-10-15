@@ -83,10 +83,9 @@
 
             foreach ($users as $user)
             {
-              $username = $user->fetch_objet();
-
+              $username = $user['login'];
               echo "<tr><td>";
-              echo $username['login'];
+              echo $username;
               echo "</td></tr>";
             }
             echo"</tbody></table>";
