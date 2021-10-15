@@ -195,9 +195,10 @@ if(isset($_REQUEST["action"]))
              <span class="visually-hidden">(current)</span>
 
          </li>
-         <li class="nav-item">
+          <?php if(isset($_SESSION["login"])){echo <li class="nav-item">
            <a class="nav-link" href="logout.php" onclick="return confirm('Are you sure you want to leave?');">Logout</a>
-         </li>
+         </li>}
+         ?>
 
        </ul>
      </div>
