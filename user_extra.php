@@ -194,9 +194,7 @@ if(isset($_REQUEST["action"]))
           <li class="nav-item">
              <a class="nav-link"  href="password_change.php">Change Password</a>
           </li>
-         <?php else: ?>
          <?php endif; ?>
-
          <li class="nav-item">
            <a class="nav-link active"  href="#">New User</a>
              <span class="visually-hidden">(current)</span>
