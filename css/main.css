@@ -8,3 +8,10 @@
 #login .btn  {
     margin-top: 20px;
 }
+
+.form-wrapper {
+    padding-right: 75%;
+}
+.form-wrapper .btn  {
+    margin-top: 20px;
+}
