@@ -190,15 +190,22 @@ if(isset($_REQUEST["action"]))
            <a class="nav-link" href="portal.php">Home
            </a>
          </li>
+         <?php if(isset($_SESSION["login"])): ?>
+          <li class="nav-item">
+             <a class="nav-link"  href="password_change.php">Change Password</a>
+          </li>
+         <?php endif; ?>
+
          <li class="nav-item">
            <a class="nav-link active"  href="#">New User</a>
              <span class="visually-hidden">(current)</span>
 
          </li>
-          <?php if(isset($_SESSION["login"])){echo <li class="nav-item">
-           <a class="nav-link" href="logout.php" onclick="return confirm('Are you sure you want to leave?');">Logout</a>
-         </li>}
-         ?>
+         <?php if(isset($_SESSION["login"])): ?>
+             <li class="nav-item">
+                 <a class="nav-link" href="logout.php" onclick="return confirm('Are you sure you want to leave?');">Logout</a>
+             </li>
+         <?php endif; ?>
 
        </ul>
      </div>
