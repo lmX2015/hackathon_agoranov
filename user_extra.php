@@ -1,6 +1,5 @@
 <?php
 
-include("security.php");
 include("connect_i.php");
 include("admin/settings.php");
 
@@ -14,7 +13,7 @@ if(isset($_REQUEST["action"]))
     $password_conf = $_REQUEST["password_conf"];
     $email = $_REQUEST["email"];
     $secret = $_REQUEST["secret"];
-    $mail_activation = isset($_POST["mail_activation"]) ? 1 : 0;
+    $mail_activation = 0;
 
     if($login == "" or $email == "" or $password == "" or $secret == "")
     {
