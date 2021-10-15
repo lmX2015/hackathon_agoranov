@@ -67,14 +67,14 @@
 
 <?php
     if(isset($_SESSION["login"])){
-        $sql = "SELECT login FROM users;"
+        $sql = "SELECT login FROM users;";
         $recordset = $link->query($sql);
         if(!$recordset){ die("Error: " . $link->error);}
         else{
             $users = $recordset->fetch_array();
             foreach ($users as $user)
             {
-              $username = $user->fetch_object()->login
+              $username = $user->fetch_object()->login;
               echo "<p>".$username"</p>";
             }
         }
