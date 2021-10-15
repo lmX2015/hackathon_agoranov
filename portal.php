@@ -75,7 +75,7 @@
             foreach ($users as $user)
             {
               $username = $user->fetch_object()->login;
-              echo "<p>".$username"</p>";
+              echo "<p>".$username."</p>";
             }
         }
     }
