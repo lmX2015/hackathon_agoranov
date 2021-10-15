@@ -72,6 +72,7 @@
         if(!$recordset){ die("Error: " . $link->error);}
         else{
             $users = $recordset->fetch_array();
+            echo $users;
             foreach ($users as $user)
             {
               $username = $user->fetch_object()->login;
