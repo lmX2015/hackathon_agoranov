@@ -80,10 +80,11 @@
             echo"</thead>";
             echo"<tbody>";
 
-
+            print_r($users);
             foreach ($users as $user)
             {
               $username = $user['login'];
+
               echo "<tr><td>";
               echo $username;
               echo "</td></tr>";
