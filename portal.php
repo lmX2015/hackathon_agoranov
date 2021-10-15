@@ -46,7 +46,7 @@ include("security.php");
           <a class="nav-link"  href="password_change.php">Change Password</a>
            </li>
         <li class="nav-item">
-          <a class="nav-link"  href="user_extra.php">Create User</a>
+          <a class="nav-link"  href="user_extra.php">New User</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="logout.php" onclick="return confirm('Are you sure you want to leave?');">Logout</a>

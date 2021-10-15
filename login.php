@@ -119,9 +119,6 @@ if(isset($_POST["form"]))
         <li class="nav-item">
           <a class="nav-link"  href="user_extra.php">New User</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="info.php">Info</a>
-        </li>
 
       </ul>
     </div>

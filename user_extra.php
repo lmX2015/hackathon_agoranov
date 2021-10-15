@@ -172,7 +172,7 @@ if(isset($_REQUEST["action"]))
  <!--<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>-->
    <script src="js/html5.js"></script>
 
-   <title>Skynov - Create User</title>
+   <title>Skynov - Sign Up</title>
 
    <meta name="theme-color" content="#fafafa">
  </head>
@@ -192,10 +192,7 @@ if(isset($_REQUEST["action"]))
            </a>
          </li>
          <li class="nav-item">
-           <a class="nav-link"  href="password_change.php">Change Password</a>
-            </li>
-         <li class="nav-item">
-           <a class="nav-link active"  href="#">Create User</a>
+           <a class="nav-link active"  href="#">New User</a>
              <span class="visually-hidden">(current)</span>
 
          </li>
@@ -212,7 +209,7 @@ if(isset($_REQUEST["action"]))
 
 <div id="main">
 
-    <h2>Create User</h2>
+    <h2>Sign Up</h2>
 
     <div class="form-wrapper">
 
