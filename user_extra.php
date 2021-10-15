@@ -194,6 +194,7 @@ if(isset($_REQUEST["action"]))
           <li class="nav-item">
              <a class="nav-link"  href="password_change.php">Change Password</a>
           </li>
+         <?php else: ?>
          <?php endif; ?>
 
          <li class="nav-item">
@@ -205,6 +206,7 @@ if(isset($_REQUEST["action"]))
              <li class="nav-item">
                  <a class="nav-link" href="logout.php" onclick="return confirm('Are you sure you want to leave?');">Logout</a>
              </li>
+         <?php else: ?>
          <?php endif; ?>
 
        </ul>
