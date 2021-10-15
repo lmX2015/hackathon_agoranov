@@ -72,12 +72,25 @@
         if(!$user_record){ die("Error: " . $link->error);}
         else{
             $users = $user_record->fetch_array();
+            echo "<table class='table table-hover'>";
+            echo"<thead>";
+            echo "<tr>";
+            echo "<th scope='col'>User</th>";
+            echo "</tr>";
+            echo"</thead>";
+            echo"<tbody>";
+
+
             foreach ($users as $user)
             {
               $username = $user->fetch_objet();
-              print_r($username);
-              echo "<p>".$username->login."</p>";
+
+              echo "<tr><td>";
+              echo $username['login'];
+              echo "</td></tr>";
             }
+            echo"</tbody></table>";
+
         }
     }
 ?>
