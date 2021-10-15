@@ -60,7 +60,7 @@ include("security.php");
 <div class="main">
 <h2> Welcome <?php if(isset($_SESSION["login"])){echo ucwords($_SESSION["login"]);}?>
 
-<h3> Your secret is "<?php if(isset($_SESSION["login"])){echo ucwords($_SESSION["login"]);}?>". Keep it safe ! </h3>
+<h5>Your secret is "<?php if(isset($_SESSION["secret"])){echo ucwords($_SESSION["secret"]);}?>". Keep it safe ! </h5>
 </div>
 
 
