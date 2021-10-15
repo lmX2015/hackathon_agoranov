@@ -164,7 +164,7 @@ if(isset($_REQUEST["action"]))
 <html>
 
  <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css" media="screen" />
-   <link rel="stylesheet" type="text/css" href="css/main.css" media="screen" />
+ <link rel="stylesheet" type="text/css" href="css/main.css" media="screen" />
 
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
    <!--<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />-->
@@ -208,24 +208,15 @@ if(isset($_REQUEST["action"]))
    </div>
  </nav>
 
- <div class="main">
- <h2>Skynov, an extremely unsecure application !</h1>
- <p>
-    Welcome <?php if(isset($_SESSION["login"])){echo ucwords($_SESSION["login"]);}?>
- </p>
 
-</div>
 
 <div id="main">
 
-    <h1>Create User</h1>
-
-    <p>Create an extra user.</p>
+    <h2>Create User</h1>
     <div class="form-wrapper">
 
     <form action="<?php echo($_SERVER["SCRIPT_NAME"]);?>" method="POST">
       <fieldset>
-        <legend>Legend</legend>
         <div class="form-group row">
           <label for="login" class="col-sm-2 col-form-label">Login</label>
           <div class="col-sm-10">
@@ -253,6 +244,7 @@ if(isset($_REQUEST["action"]))
         <button type="submit" class="btn btn-primary" name="action" value="create">Create</button>
       </fieldset>
     </form>
+    </div>
 
     <br />
     <?php
