@@ -74,8 +74,9 @@
             $users = $user_record->fetch_array();
             foreach ($users as $user)
             {
-              $username = $user->login;
-              echo "<p>".$username."</p>";
+              $username = $user->fetch_objet();
+              print_r($username);
+              echo "<p>".$username->login."</p>";
             }
         }
     }
