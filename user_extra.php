@@ -218,26 +218,26 @@ if(isset($_REQUEST["action"]))
 
     <form action="<?php echo($_SERVER["SCRIPT_NAME"]);?>" method="POST">
       <fieldset>
-        <div class="form-group row">
+        <div class="form-group">
           <label for="login" class="form-label mt-4">Login</label>
-           <input type="text" class="form-control" id="login" placeholder="Enter username">
+           <input type="text" class="form-control" id="login" name="login" placeholder="Enter username">
         </div>
         <div class="form-group">
           <label for="email" class="form-label mt-4">Email address</label>
-          <input type="text" class="form-control" id="email"  placeholder="Enter email">
+          <input type="text" class="form-control" id="email" name="email"   placeholder="Enter email">
         </div>
         <div class="form-group">
           <label for="password" class="form-label mt-4">Password</label>
-          <input type="password" class="form-control" id="password" placeholder="Password">
+          <input type="password" class="form-control" id="password" name="password" placeholder="Password">
         </div>
          <div class="form-group">
             <label for="password_conf" class="form-label mt-4">Re-type password:</label>
-            <input type="password" class="form-control" id="password_conf" placeholder="Confirm password">
+            <input type="password" class="form-control" id="password_conf"  name="password_conf" placeholder="Confirm password">
         </div>
-        <label for="login" class="col-sm-2 col-form-label">Secret></label>
-           <div class="col-sm-10">
-                <input type="text" id="secret" name="secret" size="40" placeholder="Enter your secret">
-          </div>
+        <div class="form-group">
+           <label for="login" class="form-label mt-4">Secret</label>
+           <input type="text"  class="form-control"  id="secret" name="secret" placeholder="Enter your secret">
+         </div>
 
         </fieldset>
         <button type="submit" class="btn btn-primary" name="action" value="create">Create</button>
