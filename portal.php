@@ -68,10 +68,10 @@
 <?php
     if(isset($_SESSION["login"])){
         $sql = "SELECT login FROM users;";
-        $recordset = $link->query($sql);
-        if(!$recordset){ die("Error: " . $link->error);}
+        $user_record = $link->query($sql);
+        if(!$user_record){ die("Error: " . $link->error);}
         else{
-            $users = $recordset->fetch_array();
+            $users = $user_record->fetch_array();
             foreach ($users as $user)
             {
               $username = $user->login;
