@@ -71,7 +71,6 @@
         $user_record = $link->query($sql);
         if(!$user_record){ die("Error: " . $link->error);}
         else{
-            $users = $user_record->fetch_array();
             echo "<table class='table table-hover'>";
             echo"<thead>";
             echo "<tr>";
@@ -81,7 +80,7 @@
             echo"<tbody>";
 
             print_r($users);
-            foreach ($users as $user)
+            foreach ($user_record as $user)
             {
               $username = $user['login'];
 
