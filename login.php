@@ -12,7 +12,7 @@ if(isset($_POST["form"]))
 {
 
     $login = $_POST["login"];
-    $login = mysqli_real_escape_string($link, $login);
+    // $login = mysqli_real_escape_string($link, $login);
 
     $password = $_POST["password"];
     $password = mysqli_real_escape_string($link, $password);
