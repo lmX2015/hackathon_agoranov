@@ -213,15 +213,14 @@ if(isset($_REQUEST["action"]))
 <div id="main">
 
     <h2>Create User</h1>
+
     <div class="form-wrapper">
 
     <form action="<?php echo($_SERVER["SCRIPT_NAME"]);?>" method="POST">
       <fieldset>
         <div class="form-group row">
-          <label for="login" class="col-sm-2 col-form-label">Login</label>
-          <div class="col-sm-10">
-            <input type="text" class="form-control" id="login" placeholder="Enter username">
-          </div>
+          <label for="login" class="form-label mt-4">Login</label>
+           <input type="text" class="form-control" id="login" placeholder="Enter username">
         </div>
         <div class="form-group">
           <label for="email" class="form-label mt-4">Email address</label>
