@@ -1,6 +1,9 @@
 <?php
-include("security.php");
+    include("security.php");
+    include("connect_i.php");
+    include("admin/settings.php");
 ?>
+
 
 <!doctype html>
 <html class="no-js" lang="">
@@ -61,6 +64,23 @@ include("security.php");
 <h2> Welcome <?php if(isset($_SESSION["login"])){echo ucwords($_SESSION["login"]);}?>
 
 <h5>Your secret is "<?php if(isset($_SESSION["secret"])){echo ucwords($_SESSION["secret"]);}?>". Keep it safe ! </h5>
+
+<?php
+    if(isset($_SESSION["login"])){
+        $sql = "SELECT login FROM users;"
+        $recordset = $link->query($sql);
+        if(!$recordset){ die("Error: " . $link->error);}
+        else{
+            $users = $recordset->fetch_array();
+            foreach ($users as $user)
+            {
+              $username = $user->fetch_object()->login
+              echo "<p>".$username"</p>";
+            }
+        }
+    }
+?>
+
 </div>
 
 
