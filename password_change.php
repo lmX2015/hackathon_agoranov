@@ -108,14 +108,16 @@ if(isset($_REQUEST["action"]))
 
 <head>
 
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css" media="screen" />
+ <link rel="stylesheet" type="text/css" href="css/main.css" media="screen" />
 
-<!--<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Architects+Daughter">-->
-<link rel="stylesheet" type="text/css" href="css/stylesheet.css" media="screen" />
-<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+   <!--<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />-->
 
-<!--<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>-->
-<script src="js/html5.js"></script>
+ <!--<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>-->
+   <script src="js/html5.js"></script>
+
 
 <title>Skynov - Change Password</title>
 
@@ -123,53 +125,64 @@ if(isset($_REQUEST["action"]))
 
 <body>
 
-<header>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+   <div class="container-fluid">
+     <a class="navbar-brand" href="#">Skynov</a>
+     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+     </button>
 
-  <h1>Skynov</h1>
+     <div class="collapse navbar-collapse" id="navbarColor02">
+       <ul class="navbar-nav me-auto">
+         <li class="nav-item">
+           <a class="nav-link" href="portal.php">Home
+           </a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link active"  href="#">Change Password</a>
+             <span class="visually-hidden">(current)</span>
+            </li>
+         <li class="nav-item">
+           <a class="nav-link "  href="user_extra.php">Create User</a>
 
-  <h2>An extremely unsecure web document storage !</h2>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="logout.php" onclick="return confirm('Are you sure you want to leave?');">Logout</a>
+         </li>
+
+       </ul>
+     </div>
+   </div>
+ </nav>
 
 
-</header>
-
-<div id="menu">
-
-    <table>
-
-        <tr>
-
-            <td><a href="portal.php">Home</a></td>
-            <td><font color="#ffb717">Change Password</font></td>
-            <td><a href="user_extra.php">Create User</a></td>
-            <td><a href="logout.php" onclick="return confirm('Are you sure you want to leave?');">Logout</a></td>
-            <td><font color="red">Welcome <?php if(isset($_SESSION["login"])){echo ucwords($_SESSION["login"]);}?></font></td>
-
-        </tr>
-
-    </table>
-
-</div>
 
 <div id="main">
 
-    <h1>Change Password</h1>
+    <h2>Change Password</h2>
 
-    <p>Please change your password <b><?php if(isset($_SESSION["login"])){echo ucwords($_SESSION["login"]);} ?></b>.</p>
-
+    <div class="form-wrapper">
     <form action="<?php echo($_SERVER["SCRIPT_NAME"]);?>" method="POST">
+      <fieldset>
+        <div class="form-group">
+          <label for="password" class="form-label mt-4">Current password:</label>
+          <input type="password" class="form-control" id="password_conf" name="password_curr" placeholder="Password">
+        </div>
+         <div class="form-group">
+                    <label for="password_conf" class="form-label mt-4">New password:</label>
+                    <input type="password" class="form-control" id="password_new"  name="password_new" placeholder="Enter new password">
+                </div>
 
-        <p><label for="password_curr">Current password:</label><br />
-        <input type="password" id="password_curr" name="password_curr"></p>
+         <div class="form-group">
+            <label for="password_conf" class="form-label mt-4">Re-type new password:</label>
+            <input type="password" class="form-control" id="password_conf"  name="password_conf" placeholder="Confirm password">
+        </div>
 
-        <p><label for="password_new">New password:</label><br />
-        <input type="password" id="password_new" name="password_new"></p>
-
-        <p><label for="password_conf">Re-type new password:</label><br />
-        <input type="password" id="password_conf" name="password_conf"></p>
-
-        <button type="submit" name="action" value="change">Change</button>
-
+        </fieldset>
+        <button type="submit" class="btn btn-primary" name="action" value="change">Change</button>
+      </fieldset>
     </form>
+    </div>
 
     </br >
     <?php

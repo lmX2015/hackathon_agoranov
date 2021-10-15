@@ -172,7 +172,7 @@ if(isset($_REQUEST["action"]))
  <!--<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>-->
    <script src="js/html5.js"></script>
 
-   <title>Skynov - Home</title>
+   <title>Skynov - Create User</title>
 
    <meta name="theme-color" content="#fafafa">
  </head>
@@ -212,7 +212,7 @@ if(isset($_REQUEST["action"]))
 
 <div id="main">
 
-    <h2>Create User</h1>
+    <h2>Create User</h2>
 
     <div class="form-wrapper">
 
