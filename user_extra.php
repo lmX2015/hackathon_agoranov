@@ -74,8 +74,8 @@ if(isset($_REQUEST["action"]))
                 {
 
                     // Input validations
-                    $login = mysqli_real_escape_string($link, $login);
-                    $login = htmlspecialchars($login, ENT_QUOTES, "UTF-8");
+                    // $login = mysqli_real_escape_string($link, $login);
+                    // $login = htmlspecialchars($login, ENT_QUOTES, "UTF-8");
 
                     $password = mysqli_real_escape_string($link, $password);
                     $password = hash("sha1", $password, false);
