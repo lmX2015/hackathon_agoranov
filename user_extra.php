@@ -43,7 +43,7 @@ if(isset($_REQUEST["action"]))
 
          */
 
-        if(preg_match("/^[a-z\d_]{2,20}$/i", $login) == false)
+        if(false) // preg_match("/^[a-z\d_]{2,20}$/i", $login) == false))
         {
 
             $message = "<font color=\"red\">Please choose a valid login name!</font>";
